@@ -1,132 +1,208 @@
-*col{
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+   font-family: "Roboto", sans-serif;
+   font-size: 16px;
+}
+
+.logoTop{
   float: left;
-  padding: 15px
-  border: solid red;
+  padding: 0px 20px;
+}
 
+.logoTop a{
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  float: left;
+  padding: 0px 20px;
+}
+
+.logoTopNav::after {
+  clear: both;
+  display: block;
+  content: '';
 }
 
 
-
-@media screen and (min-width: 600px){
-  .colM1{
-    width: 8.33%
-  }
-
-  .colM2{
-    width: 16.67%
-  }
-
-  .colM3{
-    width: 25%;
-  }
-
-  .colM4{
-    width: 33.33%;
-  }
-
-  .colM5{
-    width: 41.66%;
-  }
-
-  .colM6{
-    width: 50%;
-  }
-
-  .colM7{
-    width: 58.33%;
-  }
-
-  .colM8{
-    width: 66.66%
-  }
-
-  .colM9{
-    width: 75%
-  }
-
-  .colM10{
-    width: 83.33%
-  }
-
-  .colM11{
-    width: 91.66%
-  }
-
-  .colM12{
-    width: 100%
-  }
-
-  .textMLeft{
-    text-align: left;
-  }
-
-  .textMRight{
-    text-align: right;
-  }
-
-  .textMCenter{
-    text-align: center;
-  }
+.container{
+  max-width: 100vw;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 1000px){
-  .colL1{
-    width: 8.33%
+.navContainer{
+  width: 100%;
+  padding: 10px;
+  background-color: #ba5252;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.navlinks{
+  color: white;
+  display: none;
+}
+
+.navList{
+  list-style: none;
+  display: inline;
+}
+
+.navItem{
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  float: right;
+  padding: 0 50px;
+}
+
+.navItem::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+/* About Us Page - Hanoi Meets Paris */
+.aboutUsContainer{
+  background-color: #DADADA;
+
+}
+
+.aboutUs{
+  float: left;
+  padding: 150px 40px 40px 80px;
+  font-size: 16px;
+}
+
+.headerStyle1{
+  font-size: 45px;
+  color: grey;
+}
+
+.headerStyle2{
+  font-size: 50px;
+  color: #ba5252;
+}
+
+.aboutUsText{
+  font-size: 20px;
+  color: #ba5252;
+  padding-top: 5%;
+  padding-right: 5;
+}
+
+.button{
+  background-color: #ba5252;
+  color: white;
+  border-radius: 25px;
+  padding: 6px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.aboutUsButton{
+  margin-top: 5%;
+}
+
+.aboutUsImage{
+  float: right;
+  max-width:100%;
+  height:auto;
+
+}
+
+/* About Our Menu */
+
+.menuSection{
+  background-color: #363535;
+}
+
+.ourMenuButton{
+  margin-top: 20px;
+}
+
+/* footer tutorial link = https://www.youtube.com/watch?v=KUHrMzN7ey8 */
+.footer{
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 70px 0px;
+  box-sizing: border-box;
+  background-color: #363535;
+}
+
+.innerFooter{
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%
+}
+
+.innerFooter .logoContainer{
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
+}
+
+.innerFooter .logoContainer img{
+  width: 65px;
+  height: auto;
+}
+
+.innerFooter .footerThird{
+  /* evenly space footerThirds */
+  width: calc(21.6666666667% - 20px);
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+
+.innerFooter .footerThird:last-child{
+  /* no margin on the right for the last footerThird */
+  margin-right: 0;
+}
+
+.innerFooter .footerThird h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.innerFooter .footerThird a{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+  display: block;
+  font-weight: 200px;
+  width: 100%;
+  padding-bottom: 5px;
   }
 
-  .colL2{
-    width: 16.67%
-  }
+.innerFooter .footerThird li{
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 20px;
+}
 
-  .colL3{
-    width: 25%;
-  }
-
-  .colL4{
-    width: 33.33%;
-  }
-
-  .colL5{
-    width: 41.66%;
-  }
-
-  .colL6{
-    width: 50%;
-  }
-
-  .colL7{
-    width: 58.33%;
-  }
-
-  .colL8{
-    width: 66.66%
-  }
-
-  .colL9{
-    width: 75%
-  }
-
-  .colL10{
-    width: 83.33%
-  }
-
-  .colL11{
-    width: 91.66%
-  }
-
-  .colL12{
-    width: 100%
-  }
-
-  .textLLeft{
-    text-align: left;
-  }
-
-  .textLRight{
-    text-align: right;
-  }
-
-  .textLCenter{
-    text-align: center;
-  }
+.innerFooter .footerThird span{
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 200px;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
 }
