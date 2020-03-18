@@ -20,9 +20,6 @@ img{
 
 /* ------------ NAV ---------- */
 
-#hamburger{
-  display: none;
-}
 
 .logoTop{
   float: left;
@@ -292,7 +289,7 @@ img{
     display: none;
   }
 
-  .navLinks{
+  .navList{
       display: none;
   }
 
@@ -300,9 +297,6 @@ img{
     position: absolute;
   }
 
-  #hamburger{
-    color: white;
-    display: block;
-  }
 
+  }
 }
