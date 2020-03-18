@@ -7,9 +7,11 @@
   text-decoration: none;
 }
 
+
 body{
    font-family: "Roboto", sans-serif;
    font-size: 16px;
+
 }
 
 img{
@@ -17,6 +19,10 @@ img{
 }
 
 /* ------------ NAV ---------- */
+
+#hamburger{
+  display: none;
+}
 
 .logoTop{
   float: left;
@@ -61,6 +67,7 @@ img{
 .navList{
   list-style: none;
   display: inline;
+
 }
 
 .navItem{
@@ -69,8 +76,10 @@ img{
   font-size: 30px;
   font-weight: 800;
   float: right;
-  padding: 0 50px;
+  padding: 0px 50px;
 }
+
+
 
 .navItem::after {
   clear: both;
@@ -109,8 +118,15 @@ img{
 .bodyTextRed{
   font-size: 20px;
   padding-top: 5%;
-  padding-right: 5;
+  padding-right: 5px;
   color: #ba5252;
+}
+
+.bodyTextGrey{
+  font-size: 20px;
+  padding-top: 5%;
+  padding-right: 5px;
+  color: #grey;
 }
 
 .button{
@@ -147,47 +163,31 @@ img{
   background-color: #363535;
 }
 
-.menuText{
-  font-size: 20px;
-  color: #ba5252;
-  padding-top: 5%;
-  padding-right: 5;
-}
-
-
 .ourMenuButton{
-  margin-top: 20px;
+  margin-top: 10%;
 }
 
-.ourMenuImage{
-  float: right;
-  max-width: 100%
+  .imageSectionReverse{
+    flex: 1;
+    padding: 20px 0px 0px 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Private Functions */
+/* ------------ FUNCTIONS PAGE ---------- */
 
-.functionsText{
-  color: grey;
-
-}
-
-.functionsText , .functionsTextRed{
-  font-size: 20px;
-  padding-top: 5%;
-  padding-right: 5;
-}
-
-.functionsTextRed{
-  color: #ba5252;
+.functionsSection{
+  background-color: white;
 }
 
 .ourFunctionsButton{
-margin-top: 20px;
+margin-top: 10%;
 }
 
-
-
+/* ------------ Footer ---------- */
 /* footer tutorial link = https://www.youtube.com/watch?v=KUHrMzN7ey8 */
+
 .footer{
   width: 100vw;
   display: block;
@@ -209,12 +209,22 @@ margin-top: 20px;
   float: left;
   height: 100%;
   display: block;
+  text-align: center;
 }
 
 .innerFooter .logoContainer img{
   width: 65px;
   height: auto;
 }
+
+.logoBottom{
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin-top: 2.5%;
+  padding: 0px 30px 0px 30px;
+
+  }
 
 .innerFooter .footerThird{
   /* evenly space footerThirds */
@@ -231,7 +241,7 @@ margin-top: 20px;
 
 .innerFooter .footerThird h1{
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   display: block;
   width: 100%;
@@ -240,7 +250,7 @@ margin-top: 20px;
 
 .innerFooter .footerThird a{
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   display: block;
   font-weight: 200px;
@@ -257,9 +267,42 @@ margin-top: 20px;
 .innerFooter .footerThird span{
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 200px;
   display: block;
   width: 100%;
-  padding-top: 20px;
+}
+
+/* ------------ Media Queries ---------- */
+
+@media(max-width:1000px){
+  .footer .innerFooter{
+    width: 90%;
+  }
+
+  .innerFooter .logoContainer .innerFooter .footerThird{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width:600px){
+
+img{
+    display: none;
+  }
+
+  .navLinks{
+      display: none;
+  }
+
+  .imageSectionReverse{
+    position: absolute;
+  }
+
+  #hamburger{
+    color: white;
+    display: block;
+  }
+
 }
